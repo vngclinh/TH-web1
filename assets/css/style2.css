@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --text-color: #ededed;
+  --border-color: #0ef;
+}
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif !important;
+  background: #1f242d;
+  color: var(--text-color);
+}
+.content {
+  width: 70%;
+}
+.part {
+  border: 2px solid #0ef;
+  outline: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #ededed;
+  margin-top: 12px;
+  padding: 25px;
+}
+.part h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 30px;
+}
+.q1 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.option label {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  accent-color: #0ef;
+  transform: scale(1.2);
+}
+.option textarea {
+  line-height: 1.6;
+  letter-spacing: 1px;
+  padding: 1rem;
+  width: 80%;
+  height: 10rem;
+  border-radius: 0.5rem; /* Bo góc */
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  resize: none;
+}
+.option textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #0ef;
+}
+.submit {
+  padding: 12px 32px;
+  background: #0ef;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #0ef;
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.submit:hover {
+  box-shadow: none;
+}
+.button-container {
+  padding: 30px;
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc nếu có chiều cao */
+  width: 100%; /* Đảm bảo div chiếm toàn bộ chiều rộng */
+}
